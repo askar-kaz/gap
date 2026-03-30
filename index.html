@@ -799,10 +799,10 @@
         return;
       }
       statusEl.textContent = 'Жіберілуде...';
-      const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSc9So8lZ9fsBkVaW4a-_VBEwC0NhnMl1GpTf8pGdS06dwWKRw/formResponse';
+      const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLScQ8P0ztXppJzwADWzHwghSZjbKdw4wLkOGf8gt7mrFly015w/viewform?usp=publish-editor';
       const data = new FormData();
-      data.append('entry.1610969562', name);
-      data.append('entry.1959564036', answer);
+      data.append('entry.1254124040', name);
+      data.append('entry.631130657', answer);
       try {
         await fetch(formURL, { method: 'POST', mode: 'no-cors', body: data });
         statusEl.textContent = 'Рақмет! Жауабыңыз қабылданды.';
